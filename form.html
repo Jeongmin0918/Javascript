@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 구조 예제</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>사이트 이름</h1>
+    </header>
+
+    <main>
+        <h2>로그인</h2>
+
+        <form action="/login-process" method="post">
+            <section>
+                <label for="user-id">아이디:</label>
+                <input type="text" id="user-id" name="user_id" required>
+            </section>
+
+            <section>
+                <label for="user-pw">비밀번호:</label>
+                <input type="password" id="user-pw" name="user_pw" required>
+            </section>
+
+            <button type="submit">로그인</button>
+
+            <section>
+                <label for="memo">간단한 메모:</label><br>
+                <textarea id="memo" name="memo_content" rows="4" cols="30"></textarea>
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+
+</html>
